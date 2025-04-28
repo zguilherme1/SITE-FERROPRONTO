@@ -1,0 +1,291 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+  nav {
+  display: flex;
+  background-color: var(--default-bg-color);
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  padding: 0 32px;
+  gap: 50px;
+  }
+  
+  a {
+  text-decoration: none;
+  color: var(--produtos-p);
+  transition: 0.3s;
+  }
+  
+  a:hover {
+  color: #ff6600;
+  opacity: 0.8;
+  }
+  
+  .nav-list { /* "ul" */
+  display: flex;
+  list-style: none;
+  font-size: 24px;
+  gap: 0px;
+  }
+  
+  .nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+  font-size: 24px;
+  }
+  
+  .div-botao {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  }
+  
+  .botao-cor {
+  transform: scale(1.5);
+  cursor: pointer;
+  margin: 20px;
+  }
+  
+  .logo-img {
+    height: 65px; /* logo na aba home */
+    width: auto;
+  }
+  
+   .p {
+    color: var(--produtos-p);
+   }
+   
+  
+    /* FOOTER/INFORMAÇÕES DA EMPRESA*/
+    html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+  }
+ 
+  
+  .flex {
+    display: flex;
+    gap: 60px;
+  }
+  
+  header {
+    padding: 40px 4%;
+    
+  }
+  
+  header a:hover {
+    color: #ff6600;
+    transform: scale(1.05);
+  }
+  
+  section.especialidades {
+    padding: 0px 4%;
+  }
+  
+  .titulo {
+    text-align: center;
+    font-size: 32px;
+    color: #FF6600;
+  }
+  
+  .especialidades-box {
+    flex: 1;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 45px;
+    background-color:var(--default-bg-color);
+    transition: 0.2s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ff6600;
+  }
+  
+  .especialidades-box i {
+    font-size: 70px;
+    color: #ff6600;
+    margin-bottom: 10px;
+  }
+  
+  .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+  }
+  
+  .especialidades-box p {
+    word-break: break-word;
+  }
+  
+  .form-container {
+    max-width: 600px;
+    background: #ff6600;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px #ff6600;
+    margin: 40px auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #000;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #ff6600;
+    outline: none;
+  }
+  
+  button {
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ff6600;
+    color: #000;
+  }
+  
+  @media (max-width: 768px) {
+    .flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .especialidades-box {
+      width: 90%;
+    }
+  
+    .form-container {
+      padding: 20px;
+    }
+  
+    input,
+    select,
+    textarea,
+    button {
+      font-size: 15px;
+    }
+  
+    .titulo {
+      font-size: 28px;
+    }
+  }
+  main {
+      flex: 1;
+  }
+    footer {
+      background-color: #000; 
+      color: #FF6600;
+      text-align: center;
+      padding: 30px 20px 20px;
+      width: 100%;
+  }
+  
+  footer .empresa { 
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 15px;
+  }
+  
+  footer .info {
+      margin: 8px 0;
+      font-size: 1em;
+  }
+  
+  footer .info span {
+      display: block;
+      color: #ccc;
+  }
+  
+  footer .info .destaque {
+      color: #FF6600;
+      font-weight: bold;
+  }
+  
+  footer .direitos {
+      margin-top: 25px;
+      font-size: 0.9em;
+      color: #888;
+  }
+
+  .botao-circular {
+    width: 50px;
+    height: 50px; 
+    background-color: #000000; 
+    border: none;
+    border-radius: 50%; 
+    cursor: pointer; 
+    font-size: 16px;
+    color: white; 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+   border-radius: 10px;
+   right: 15px;
+  }
+  :root {
+    --default-bg-color: #ffffff;
+    --font-color: #ff6600;
+    --header-font-color:  #ff6600;
+    --primary-bg-color:  #000000;
+    --bw-footer-bg-color: #ff6600;
+    --produts-bg: #11e2cd;
+    --produtos-p: #000000; 
+    --nav-bg: #ffff; 
+    --ahref: #2c2c2c; 
+    --ahref-hover: #000000;
+  }
+  .dark-mode {
+    --default-bg-color: #000000;
+    --font-color: #ff6600;
+    --header-font-color:  #ff6600;
+    --primary-bg-color:  #000000;
+    --bw-footer-bg-color: #ff6600;
+    --produts-bg: #11e237;
+    --produtos-p: #ffffff; 
+    --nav-bg: #000000; 
+    --ahref: #ffff; 
+    --ahref-hover: #331414; 
+  }
+ 

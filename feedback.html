@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferropronto - Corte e Dobra de aço</title>
+    <link rel="stylesheet" href="feedbacks.css">
+    <link rel="icon" href="logo-secundaria.PNG">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <!-- LOGO E MENU -->
+        <a class="logo" href="homepage.html">
+            <img src="logo-nova.png" alt="logo-img" class="logo-img">
+          </a>
+          
+        
+        <ul class="nav-list">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="Empresa.html">A empresa</a></li>
+            <li><a href="Produtos.html">Produtos</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+            <li><a href="feedback.html">Feedbacks</a></li>
+        </ul>
+
+        <!-- BOTÃO ACESSIBILIDADE -->
+        <div>
+            <button class="botao-circular" id="switch-theme" onclick="switchTheme()">🌙</button>
+          </div>
+    </nav>
+</header>
+
+<!-- FEEDBACKS -->
+
+<section class="feedback-clientes">
+    <h2>Avalie a Qualidade do Nosso Produto/Serviço</h2>
+    <p class="p">Estamos constantemente aprimorando nossos produtos e serviços. A sua avaliação é fundamental para garantir que atendamos às suas expectativas.</p>
+
+    <div class="campo">
+        <label for="produto">Como você avaliaria a qualidade do produto/serviço recebido?</label>
+        <select id="produto" name="produto">
+            <option value="Excelente">Excelente</option>
+            <option value="Bom">Bom</option>
+            <option value="Regular">Regular</option>
+            <option value="Ruim">Ruim</option>
+            <option value="Péssimo">Péssimo</option>
+        </select>
+    </div>
+
+    <div class="campo">
+        <label for="comentario-produto">Comentários adicionais sobre a qualidade do produto/serviço:</label>
+        <textarea id="comentario-produto" name="comentario-produto" rows="4" placeholder="Deixe suas observações ou sugestões para melhorar nosso produto/serviço."></textarea>
+    </div>
+
+    <button type="submit"><i class="bi bi-cursor"></i> Enviar</button>
+    <div id="resposta-produto" class="resposta-feedback"></div>
+</section>
+
+
+
+  
+<!-- RODAPÉ da Empresa -->
+<footer>
+    <div class="empresa">Ferropronto</div>
+    <div class="info">
+        <span class="destaque">Telefone:</span>
+        <span>71 3378-1425</span>
+    </div>
+    <div class="info">
+        <span class="destaque">E-mail:</span>
+        <span>ferropronto@ferropronto.net</span>
+    </div>
+    <div class="info">
+        <span class="destaque">Endereço:</span>
+        <span>Lot. Vida Nova, Micropolo Industrial Midas II, lote 09</span>
+        <span>Caji, Lauro de Freitas-BA, CEP 42717-820</span>
+    </div>
+    <div class="direitos">
+        &copy; 2025 Ferropronto. Todos os direitos reservados.
+    </div>
+</footer>
+
+<script src="new.js"></script>
+
+</body>
+</html>

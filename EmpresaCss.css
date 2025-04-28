@@ -1,0 +1,249 @@
+body {
+    background-color: var(--default-bg-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  background-color: var(--default-bg-color);
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  padding: 0 32px;
+  gap: 50px;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: var(--produtos-p);
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #ff6600;
+  opacity: 0.8;
+}
+
+.nav-list { /* "ul" */
+  display: flex;
+  list-style: none;
+  font-size: 24px;
+  
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+  font-size: 24px;
+}
+
+.div-botao {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.botao-cor {
+  transform: scale(1.5);
+  cursor: pointer;
+  margin: 20px; /* Mudança da cor do botão*/
+}
+
+.logo-img {
+  height: 65px; /* logo na aba home */
+  width: auto;
+}
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      padding-bottom: 250px; /* espaço para o rodapé não cobrir conteúdo */
+    }
+
+
+		
+  
+
+    /* FOOTER/INFORMAÇÕES DA EMPRESA*/
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+	}
+	
+	main {
+			flex: 1; /* Faz o main crescer e empurrar o footer para baixo */
+	}
+	
+	footer {
+			background-color: #000; /* Design do Rodapé */
+			color: #FF6600;
+			text-align: center;
+			padding: 30px 20px 20px;
+			width: 100%;
+	}
+	
+	footer .empresa { 
+			font-size: 1.5em; /* Nome da Empresa */
+			font-weight: bold;
+			margin-bottom: 15px;
+	}
+	
+	footer .info {
+			margin: 8px 0; /* Informações */
+			font-size: 1em;
+	}
+	
+	footer .info span {
+			display: block;
+			color: #ccc;
+	}
+	
+	footer .info .destaque {
+			color: #FF6600;
+			font-weight: bold;
+	}
+	
+	footer .direitos {
+			margin-top: 25px; /* Direitos Autorais */
+			font-size: 0.9em;
+			color: #888;
+	}
+	
+
+
+
+/* SLIDER/PASSADOR DE IMAGENS */
+.slider { /*Css refente as imagens contendo a sombra da imagem, as bordas e tamanhos*/
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+
+
+
+/* BOTÕES DO SLIDER*/
+.nav-button {
+  position: absolute;/* Posicionamento do botao */
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-color: rgba(255, 102, 0, 0.7); /* Customização do Botão */
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 24px;
+  z-index: 2;
+}
+
+#prev {
+  left: 20px;
+}
+
+#next {
+  right: 20px;
+}
+
+.nav-button:hover {
+  background-color: #ff6600;
+}
+
+
+
+
+  /* ESTILO DO CONTEÚDO PRINCIPAL */
+  .conteudo-principal {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .conteudo-principal h1 {
+    font-size: 2.5em;
+    color: #ff6600;
+    margin-bottom: 20px;
+  }
+  
+  .conteudo-principal p {
+    font-size: 1.2em;
+    color:var(--produtos-p);
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  .botao-circular {
+    width: 50px;
+    height: 50px; 
+    background-color: #000000; 
+    border: none;
+    border-radius: 10px; /* Só 10px mesmo, como você queria */
+    cursor: pointer; 
+    font-size: 16px;
+    color: white; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+}
+  :root {
+    --default-bg-color: #ffffff;
+    --font-color: #ff6600;
+    --header-font-color:  #ff6600;
+    --primary-bg-color:  #000000;
+    --bw-footer-bg-color: #ff6600;
+    --produts-bg: #11e2cd;
+    --produtos-p: #000000; 
+    --nav-bg: #ffff; 
+    --ahref: #2c2c2c; 
+    --ahref-hover: #000000;
+  }
+  .dark-mode {
+    --default-bg-color: #000000;
+    --font-color: #ff6600;
+    --header-font-color:  #ff6600;
+    --primary-bg-color:  #000000;
+    --bw-footer-bg-color: #ff6600;
+    --produts-bg: #11e237;
+    --produtos-p: #ffffff; 
+    --nav-bg: #000000; 
+    --ahref: #ffff; 
+    --ahref-hover: #331414; 
+  }
+ 
